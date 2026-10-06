@@ -74,6 +74,12 @@
     .about-copy p { max-width: 680px; }
     .quote { position: relative; padding: 2rem 2rem 2rem 2.25rem; border-left: 2px solid var(--rust); background: linear-gradient(110deg, var(--panel), transparent); color: var(--paper); font-size: 1.35rem; font-style: italic; }
     .quote cite { display: block; margin-top: 1rem; color: var(--gold); font: 600 .72rem var(--display); letter-spacing: .1em; text-transform: uppercase; }
+    .conduct-section { border-block: 1px solid var(--line); background: linear-gradient(120deg, rgb(209 171 97 / 5%), transparent 55%), var(--deep); }
+    .conduct-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+    .conduct-item { padding: clamp(1.25rem, 3vw, 2rem); background: var(--deep); }
+    .conduct-item h3 { margin: 0 0 .45rem; color: var(--gold-pale); font: 600 .9rem var(--display); letter-spacing: .04em; }
+    .conduct-item p { margin: 0; color: var(--muted); }
+    .conduct-note { margin: 1rem 0 0; color: var(--muted); font-size: .98rem; font-style: italic; }
     .road-section { background: linear-gradient(180deg, transparent, rgb(255 255 255 / 2%), transparent); }
     .road { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; counter-reset: stage; }
     .step { position: relative; min-height: 220px; padding: 1.65rem; border: 1px solid var(--line); background: linear-gradient(145deg, var(--panel-light), var(--panel)); counter-increment: stage; }
@@ -120,6 +126,7 @@
       .hero::before { background-position: 60% center; }
       .about-grid { grid-template-columns: 1fr; gap: 1.7rem; }
       .road { grid-template-columns: 1fr; }
+      .conduct-grid { grid-template-columns: 1fr; }
       .step { min-height: 0; }
       .rank-grid { grid-template-columns: repeat(2, 1fr); }
       .gallery { grid-template-columns: repeat(6, 1fr); }
@@ -152,7 +159,7 @@
     <nav class="nav wrap" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="The Myrmidons home"><img src="images/crest.png" alt="" width="42" height="42">THE MYRMIDONS</a>
       <ul class="nav-links">
-        <li><a href="#about">ABOUT</a></li><li><a href="#road">THE ROAD</a></li><li><a href="#ranks">RANKS</a></li><li><a href="#memories">MEMORIES</a></li><li><a class="nav-join" href="#join">JOIN US</a></li>
+        <li><a href="#about">ABOUT</a></li><li><a href="#conduct">CODE</a></li><li><a href="#road">THE ROAD</a></li><li><a href="#ranks">RANKS</a></li><li><a href="#memories">MEMORIES</a></li><li><a class="nav-join" href="#join">JOIN US</a></li>
       </ul>
     </nav>
   </header>
@@ -173,6 +180,18 @@
       <div class="wrap about-grid">
         <div class="about-copy"><p class="eyebrow">A guild with history</p><h2>Good company, since vanilla</h2><p>We came up in vanilla on Shattered Hand, back when a group quest in Hillsbrad took a whole evening and nobody minded. The Myrmidons are the same crowd, still here, still friendly.</p><p>Our first priority is a good time. Level with people you like, run dungeons that actually get finished, and build toward raiding at a pace that suits the whole guild.</p></div>
         <blockquote class="quote">“No pressure, no drama. Bring a good attitude and a few spare bags.”<cite>Ruwa · Warchief</cite></blockquote>
+      </div>
+    </section>
+    <section id="conduct" class="conduct-section">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Good people make a good guild</p><h2>Code of Conduct</h2><p class="section-intro">Real life is stressful enough. Guild time is for relaxing, playing, and enjoying good company.</p></div>
+        <div class="conduct-grid">
+          <article class="conduct-item"><h3>Respect each other</h3><p>Be kind in chat, voice, groups, and raids. Keep jokes friendly, and stop when someone says they’re not enjoying them.</p></article>
+          <article class="conduct-item"><h3>No racism or hate</h3><p>Racism, slurs, hate speech, harassment, and discrimination have no place here. Treat people with respect, whatever their background or identity.</p></article>
+          <article class="conduct-item"><h3>Leave politics at the door</h3><p>Keep guild chat and Discord free of political arguments and divisive real-world debates. We’re here to chill and enjoy the game together.</p></article>
+          <article class="conduct-item"><h3>Real life comes first</h3><p>There’s no pressure to play, level, or raid on a schedule. Be patient with each other, and give people room to step away when life gets busy.</p></article>
+        </div>
+        <p class="conduct-note">If something feels off, reach out to an officer. We can help reset the conversation and keep the guild welcoming for everyone.</p>
       </div>
     </section>
     <section id="road" class="road-section">
